@@ -2,10 +2,10 @@ import './App.css';
 import React,{useState} from 'react';
 
 function App() {
-  const [formData,setFormData]=useState([{
+  const [formData,setFormData]=useState({
     FirstName:"",
     LastName:""
-  }]);
+  });
   const [submitedData,setSubmitedData]=useState(null);
   const handleChange=(e)=>{
     const {name,value}=e.target;
